@@ -1,0 +1,57 @@
+{
+  "uid" : "9612b117fbb1baaf",
+  "name" : "test_case_add[add_001]",
+  "fullName" : "scripts.test_departments.TestDepartment#test_case_add",
+  "historyId" : "006189544e7920b38416f0024fcf8796",
+  "time" : {
+    "start" : 1576401747922,
+    "stop" : 1576401748039,
+    "duration" : 117
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "scripts"
+  }, {
+    "name" : "suite",
+    "value" : "test_departments"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestDepartment"
+  }, {
+    "name" : "host",
+    "value" : "your-desired-host-name"
+  }, {
+    "name" : "thread",
+    "value" : "31471-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "scripts.test_departments"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case_id",
+    "value" : "'add_001'"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "9612b117fbb1baaf.json",
+  "parameterValues" : [ "'add_001'" ]
+}

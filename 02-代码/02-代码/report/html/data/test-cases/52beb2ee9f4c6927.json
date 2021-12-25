@@ -1,0 +1,148 @@
+{
+  "uid" : "52beb2ee9f4c6927",
+  "name" : "学院-增加-增加一条T001数据",
+  "fullName" : "scripts.test_departments.TestDepartment#test_case_add",
+  "historyId" : "006189544e7920b38416f0024fcf8796",
+  "time" : {
+    "start" : 1576403824196,
+    "stop" : 1576403824302,
+    "duration" : 106
+  },
+  "descriptionHtml" : "<h1>Test with some complicated html description</h1>\n           <table style=\"width:100%\">\n             <tr>\n               <th>名称</th>\n               <th>值</th>\n             </tr>\n             \n                     <tr align=\"center\">\n                        <td>module_name</td>\n                        <td>学院-增加</td>\n                     </tr>\n                   \n                     <tr align=\"center\">\n                        <td>case_id</td>\n                        <td>add_001</td>\n                     </tr>\n                   \n                     <tr align=\"center\">\n                        <td>title</td>\n                        <td>增加一条T001数据</td>\n                     </tr>\n                   \n                     <tr align=\"center\">\n                        <td>fixture</td>\n                        <td>T001在数据库中不存在</td>\n                     </tr>\n                   \n                     <tr align=\"center\">\n                        <td>url</td>\n                        <td>/api/departments/</td>\n                     </tr>\n                   \n                     <tr align=\"center\">\n                        <td>method</td>\n                        <td>POST</td>\n                     </tr>\n                   \n                     <tr align=\"center\">\n                        <td>data</td>\n                        <td>{\n                \"data\": [\n                        {\n                            \"dep_id\":\"T001\",\n                            \"dep_name\":\"Test学院\",\n                            \"master_name\":\"Test-Masterx\"\n                        }\n                  ]\n            }</td>\n                     </tr>\n                   \n                     <tr align=\"center\">\n                        <td>cookies</td>\n                        <td>{}</td>\n                     </tr>\n                   \n                     <tr align=\"center\">\n                        <td>headers</td>\n                        <td>{\"content-type\":\"application/json\"}</td>\n                     </tr>\n                   \n                     <tr align=\"center\">\n                        <td>expect_way</td>\n                        <td>json</td>\n                     </tr>\n                   \n                     <tr align=\"center\">\n                        <td>expect_res</td>\n                        <td>{\n    \"already_exist\": {\n        \"count\": 0,\n        \"results\": []\n    },\n    \"create_success\": {\n        \"count\": 1,\n        \"results\": [\n            {\n                \"dep_id\": \"T001\",\n                \"dep_name\": \"Test学院\",\n                \"master_name\": \"Test-Masterx\",\n                \"slogan\": null\n            }\n        ]\n    }\n}</td>\n                     </tr>\n                   \n                     <tr align=\"center\">\n                        <td>desc</td>\n                        <td>None</td>\n                     </tr>\n                   \n                     <tr align=\"center\">\n                        <td>actual_res</td>\n                        <td>{\"already_exist\":{\"count\":0,\"results\":[]},\"create_success\":{\"count\":1,\"results\":[{\"dep_id\":\"T001\",\"dep_name\":\"Test学院\",\"master_name\":\"Test-Masterx\",\"slogan\":null}]}}</td>\n                     </tr>\n                   \n                     <tr align=\"center\">\n                        <td>actual_status_code</td>\n                        <td>201</td>\n                     </tr>\n                   \n           </table>",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "scripts"
+  }, {
+    "name" : "suite",
+    "value" : "test_departments"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestDepartment"
+  }, {
+    "name" : "host",
+    "value" : "your-desired-host-name"
+  }, {
+    "name" : "thread",
+    "value" : "36428-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "scripts.test_departments"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case_id",
+    "value" : "'add_001'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "d013134a4321751a",
+      "status" : "failed",
+      "statusDetails" : "AssertionError",
+      "time" : {
+        "start" : 1576403543556,
+        "stop" : 1576403543635,
+        "duration" : 79
+      }
+    }, {
+      "uid" : "701bf0d7b4c9d887",
+      "status" : "failed",
+      "statusDetails" : "AssertionError",
+      "time" : {
+        "start" : 1576403235149,
+        "stop" : 1576403235250,
+        "duration" : 101
+      }
+    }, {
+      "uid" : "c1c1f0ac2c783ac1",
+      "status" : "failed",
+      "statusDetails" : "AssertionError",
+      "time" : {
+        "start" : 1576403168979,
+        "stop" : 1576403169083,
+        "duration" : 104
+      }
+    }, {
+      "uid" : "d17e3498de65897c",
+      "status" : "failed",
+      "statusDetails" : "AssertionError",
+      "time" : {
+        "start" : 1576403156629,
+        "stop" : 1576403156706,
+        "duration" : 77
+      }
+    }, {
+      "uid" : "c3a8dcfef858f6c6",
+      "status" : "failed",
+      "statusDetails" : "AssertionError",
+      "time" : {
+        "start" : 1576403083545,
+        "stop" : 1576403083702,
+        "duration" : 157
+      }
+    }, {
+      "uid" : "b8815e10540508bb",
+      "status" : "failed",
+      "statusDetails" : "AssertionError",
+      "time" : {
+        "start" : 1576402956533,
+        "stop" : 1576402956622,
+        "duration" : 89
+      }
+    }, {
+      "uid" : "85c755d56c811e4a",
+      "status" : "failed",
+      "statusDetails" : "AssertionError",
+      "time" : {
+        "start" : 1576402823224,
+        "stop" : 1576402823310,
+        "duration" : 86
+      }
+    }, {
+      "uid" : "c120027ae101d165",
+      "status" : "passed",
+      "time" : {
+        "start" : 1576401946049,
+        "stop" : 1576401946142,
+        "duration" : 93
+      }
+    }, {
+      "uid" : "7787a37edb2326fa",
+      "status" : "failed",
+      "statusDetails" : "AssertionError",
+      "time" : {
+        "start" : 1576401935989,
+        "stop" : 1576401936078,
+        "duration" : 89
+      }
+    }, {
+      "uid" : "9612b117fbb1baaf",
+      "status" : "passed",
+      "time" : {
+        "start" : 1576401747922,
+        "stop" : 1576401748039,
+        "duration" : 117
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "52beb2ee9f4c6927.json",
+  "parameterValues" : [ "'add_001'" ]
+}

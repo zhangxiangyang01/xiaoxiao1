@@ -1,0 +1,58 @@
+{
+  "uid" : "b4f7053b7ff7647",
+  "name" : "学院-查询-查询T004的数据",
+  "fullName" : "scripts.test_departments.TestDepartment#test_case_query",
+  "historyId" : "d22e6971767cd4a8bf5b2f1b9809f758",
+  "time" : {
+    "start" : 1576403544796,
+    "stop" : 1576403544961,
+    "duration" : 165
+  },
+  "descriptionHtml" : "<h1>Test with some complicated html description</h1>\n        <table style=\"width:100%\">\n          <tr>\n            <th>名称</th>\n            <th>值</th>\n          </tr>\n\n\n          \n                  <tr align=\"center\">\n            <td>module_name</td>\n            <td>学院-查询</td>\n          </tr>\n                \n                  <tr align=\"center\">\n            <td>case_id</td>\n            <td>query_004</td>\n          </tr>\n                \n                  <tr align=\"center\">\n            <td>title</td>\n            <td>查询T004的数据</td>\n          </tr>\n                \n                  <tr align=\"center\">\n            <td>fixture</td>\n            <td>add_004</td>\n          </tr>\n                \n                  <tr align=\"center\">\n            <td>url</td>\n            <td>/api/departments/T004/</td>\n          </tr>\n                \n                  <tr align=\"center\">\n            <td>method</td>\n            <td>GET</td>\n          </tr>\n                \n                  <tr align=\"center\">\n            <td>data</td>\n            <td>None</td>\n          </tr>\n                \n                  <tr align=\"center\">\n            <td>cookies</td>\n            <td>{}</td>\n          </tr>\n                \n                  <tr align=\"center\">\n            <td>headers</td>\n            <td>{}</td>\n          </tr>\n                \n                  <tr align=\"center\">\n            <td>expect_way</td>\n            <td>json</td>\n          </tr>\n                \n                  <tr align=\"center\">\n            <td>expect_res</td>\n            <td>{\n    \"dep_id\": \"T004\",\n    \"dep_name\": \"Test学院\",\n    \"master_name\": \"Test-Masterx\",\n    \"slogan\": null\n}</td>\n          </tr>\n                \n                  <tr align=\"center\">\n            <td>desc</td>\n            <td>None</td>\n          </tr>\n                \n                  <tr align=\"center\">\n            <td>actual_res</td>\n            <td>{\"dep_id\":\"T004\",\"dep_name\":\"Test学院\",\"master_name\":\"Test-Masterx\",\"slogan\":null}</td>\n          </tr>\n                \n\n\n        </table>",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "scripts"
+  }, {
+    "name" : "suite",
+    "value" : "test_departments"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestDepartment"
+  }, {
+    "name" : "host",
+    "value" : "your-desired-host-name"
+  }, {
+    "name" : "thread",
+    "value" : "35727-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "scripts.test_departments"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case_id",
+    "value" : "'query_004'"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "b4f7053b7ff7647.json",
+  "parameterValues" : [ "'query_004'" ]
+}

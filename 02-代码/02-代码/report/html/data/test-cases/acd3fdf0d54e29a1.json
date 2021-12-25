@@ -1,0 +1,59 @@
+{
+  "uid" : "acd3fdf0d54e29a1",
+  "name" : "test_case_add[add_002]",
+  "fullName" : "scripts.test_departments.TestDepartment#test_case_add",
+  "historyId" : "0f64d9265ba207395d65bf9df270b014",
+  "time" : {
+    "start" : 1576403235413,
+    "stop" : 1576403235472,
+    "duration" : 59
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError",
+  "statusTrace" : "self = <scripts.test_departments.TestDepartment object at 0x114d07b70>, case_id = 'add_002'\n\n    @pytest.mark.parametrize(\"case_id\", get_case_id(\"add\", 5))\n    def test_case_add(self, case_id):\n        # 1. 获取Excel表格中的数据\n        em = base_excel.get_item_with_case_id(case_id)\n        # 2. 处理前置\n        self.deal_fixture(em)\n        # 3. 发送请求\n        res = requests.post(self.BASE_URL + em.url, data=em.data.encode('utf-8'), headers=eval(em.headers))\n        # 4. 断言\n>       assert_res(res, em)\n\nscripts/test_departments.py:42: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nres = <Response [200]>, em = <base.base_excel.ExcelModule object at 0x114d07ac8>\n\n    def assert_res(res, em):\n    \n        # 如果这个断言是自己调用的，则不进行后续的断言操作\n        if os.getcwd() in traceback.extract_stack()[-3][0]:\n            return\n    \n        if em.expect_way == \"json\":\n>           assert res.json() == json.loads(em.expect_res)\nE           AssertionError\n\nbase/base_assert.py:12: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "scripts"
+  }, {
+    "name" : "suite",
+    "value" : "test_departments"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestDepartment"
+  }, {
+    "name" : "host",
+    "value" : "your-desired-host-name"
+  }, {
+    "name" : "thread",
+    "value" : "35034-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "scripts.test_departments"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case_id",
+    "value" : "'add_002'"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "acd3fdf0d54e29a1.json",
+  "parameterValues" : [ "'add_002'" ]
+}

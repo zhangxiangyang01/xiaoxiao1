@@ -1,0 +1,165 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "scripts.test_departments",
+    "children" : [ {
+      "name" : "学院-增加-增加一条T001数据",
+      "uid" : "52beb2ee9f4c6927",
+      "parentUid" : "49dc0c91924db57b37788f8079b310b3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1576403824196,
+        "stop" : 1576403824302,
+        "duration" : 106
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "'add_001'" ]
+    }, {
+      "name" : "学院-增加-增加一条T002数据",
+      "uid" : "eaf83ab3147bfeed",
+      "parentUid" : "49dc0c91924db57b37788f8079b310b3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1576403824307,
+        "stop" : 1576403824393,
+        "duration" : 86
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "'add_002'" ]
+    }, {
+      "name" : "学院-增加-增加一条数据",
+      "uid" : "bc0d2c9008ffc42e",
+      "parentUid" : "49dc0c91924db57b37788f8079b310b3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1576403824396,
+        "stop" : 1576403824470,
+        "duration" : 74
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "'add_003'" ]
+    }, {
+      "name" : "学院-增加-增加一条数据",
+      "uid" : "f5ce6da1b98a8b3f",
+      "parentUid" : "49dc0c91924db57b37788f8079b310b3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1576403824474,
+        "stop" : 1576403824541,
+        "duration" : 67
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "'add_004'" ]
+    }, {
+      "name" : "学院-增加-增加一条数据",
+      "uid" : "9cc77f6b50e62f25",
+      "parentUid" : "49dc0c91924db57b37788f8079b310b3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1576403824544,
+        "stop" : 1576403824622,
+        "duration" : 78
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "'add_005'" ]
+    }, {
+      "name" : "学院-查询-查询T001的数据",
+      "uid" : "9dd3cf0de882dd3d",
+      "parentUid" : "49dc0c91924db57b37788f8079b310b3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1576403824625,
+        "stop" : 1576403825067,
+        "duration" : 442
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "'query_001'" ]
+    }, {
+      "name" : "学院-查询-查询T002的数据",
+      "uid" : "80b24d376487d271",
+      "parentUid" : "49dc0c91924db57b37788f8079b310b3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1576403825070,
+        "stop" : 1576403825201,
+        "duration" : 131
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "'query_002'" ]
+    }, {
+      "name" : "学院-查询-查询T003的数据",
+      "uid" : "5badc7bc972d87d9",
+      "parentUid" : "49dc0c91924db57b37788f8079b310b3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1576403825205,
+        "stop" : 1576403825344,
+        "duration" : 139
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "'query_003'" ]
+    }, {
+      "name" : "学院-查询-查询T004的数据",
+      "uid" : "3429229abb0204b1",
+      "parentUid" : "49dc0c91924db57b37788f8079b310b3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1576403825348,
+        "stop" : 1576403825496,
+        "duration" : 148
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "'query_004'" ]
+    }, {
+      "name" : "学院-查询-查询T005的数据",
+      "uid" : "8ccbf5e67d2b5c38",
+      "parentUid" : "49dc0c91924db57b37788f8079b310b3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1576403825499,
+        "stop" : 1576403825681,
+        "duration" : 182
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "'query_005'" ]
+    }, {
+      "name" : "学院-更新-更新数据",
+      "uid" : "4dfdedc5eb979409",
+      "parentUid" : "49dc0c91924db57b37788f8079b310b3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1576403825685,
+        "stop" : 1576403825855,
+        "duration" : 170
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "'update_001'" ]
+    }, {
+      "name" : "学院-更新-更新数据",
+      "uid" : "dc672fa3193417d6",
+      "parentUid" : "49dc0c91924db57b37788f8079b310b3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1576403825858,
+        "stop" : 1576403825942,
+        "duration" : 84
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "'update_002'" ]
+    } ],
+    "uid" : "scripts.test_departments"
+  } ]
+}

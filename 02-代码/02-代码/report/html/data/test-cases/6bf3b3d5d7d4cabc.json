@@ -1,0 +1,60 @@
+{
+  "uid" : "6bf3b3d5d7d4cabc",
+  "name" : "学院-查询-查询T002的数据",
+  "fullName" : "scripts.test_departments.TestDepartment#test_case_query",
+  "historyId" : "1533109ab7adaffad1970d232b1d915c",
+  "time" : {
+    "start" : 1576403235712,
+    "stop" : 1576403236105,
+    "duration" : 393
+  },
+  "descriptionHtml" : "<h1>Test with some complicated html description</h1>\n<table style=\"width:100%\">\n  <tr>\n    <th>名称</th>\n    <th>值</th>\n  </tr>\n\n\n  \n          <tr align=\"center\">\n    <td>module_name</td>\n    <td>学院-查询</td>\n  </tr>\n        \n          <tr align=\"center\">\n    <td>case_id</td>\n    <td>query_002</td>\n  </tr>\n        \n          <tr align=\"center\">\n    <td>title</td>\n    <td>查询T002的数据</td>\n  </tr>\n        \n          <tr align=\"center\">\n    <td>fixture</td>\n    <td>add_002</td>\n  </tr>\n        \n          <tr align=\"center\">\n    <td>url</td>\n    <td>/api/departments/T002/</td>\n  </tr>\n        \n          <tr align=\"center\">\n    <td>method</td>\n    <td>GET</td>\n  </tr>\n        \n          <tr align=\"center\">\n    <td>data</td>\n    <td>None</td>\n  </tr>\n        \n          <tr align=\"center\">\n    <td>cookies</td>\n    <td>{}</td>\n  </tr>\n        \n          <tr align=\"center\">\n    <td>headers</td>\n    <td>{}</td>\n  </tr>\n        \n          <tr align=\"center\">\n    <td>expect_way</td>\n    <td>json</td>\n  </tr>\n        \n          <tr align=\"center\">\n    <td>expect_res</td>\n    <td>{\n    \"dep_id\": \"T002\",\n    \"dep_name\": \"Test学院\",\n    \"master_name\": \"Test-Masterx\",\n    \"slogan\": null\n}</td>\n  </tr>\n        \n          <tr align=\"center\">\n    <td>desc</td>\n    <td>None</td>\n  </tr>\n        \n\n\n</table>",
+  "status" : "failed",
+  "statusMessage" : "AssertionError",
+  "statusTrace" : "self = <scripts.test_departments.TestDepartment object at 0x115f0cdd8>, case_id = 'query_001'\n\n        @pytest.mark.parametrize('case_id', get_case_id(\"query\", 5))\n        def test_case_query(self, case_id):\n            # 1. 获取Excel表格中的数据\n            em = base_excel.get_item_with_case_id(case_id)\n    \n            # 处理报告\n            allure.dynamic.title(em.module_name + \"-\" + em.title)\n    \n            table_header = \"\"\"<h1>Test with some complicated html description</h1>\n    <table style=\"width:100%%\">\n      <tr>\n        <th>名称</th>\n        <th>值</th>\n      </tr>\n    \n    \n      %s\n    \n    \n    </table>\"\"\"\n    \n            table_content_item = \"\"\"\n              <tr align=\"center\">\n        <td>%s</td>\n        <td>%s</td>\n      </tr>\n            \"\"\"\n    \n            table_content = \"\"\n            for k,v in em.__dict__.items():\n                table_content += table_content_item % (k, v)\n    \n            table = table_header % table_content\n    \n            print(table)\n    \n            allure.dynamic.description_html(table)\n    \n            # 2. 处理前置\n            self.deal_fixture(em)\n            # 3. 发送请求\n            res = requests.get(self.BASE_URL + em.url)\n            # 4. 断言\n>           assert_res(res, em)\n\nscripts/test_departments.py:89: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nres = <Response [200]>, em = <base.base_excel.ExcelModule object at 0x115f0c240>\n\n    def assert_res(res, em):\n    \n        # 如果这个断言是自己调用的，则不进行后续的断言操作\n        if os.getcwd() in traceback.extract_stack()[-3][0]:\n            return\n    \n        if em.expect_way == \"json\":\n>           assert res.json() == json.loads(em.expect_res)\nE           AssertionError\n\nbase/base_assert.py:12: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "scripts"
+  }, {
+    "name" : "suite",
+    "value" : "test_departments"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestDepartment"
+  }, {
+    "name" : "host",
+    "value" : "your-desired-host-name"
+  }, {
+    "name" : "thread",
+    "value" : "35034-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "scripts.test_departments"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case_id",
+    "value" : "'query_001'"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "6bf3b3d5d7d4cabc.json",
+  "parameterValues" : [ "'query_001'" ]
+}
